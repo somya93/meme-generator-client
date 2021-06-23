@@ -12,7 +12,7 @@ def home():
 
 @app.route('/result', methods=["POST"])
 def result():
-    url = "http://localhost:3000/generatememe"
+    url = "http://localhost:5000/generatememe"
     imageURL = request.form.get("imageURL")
     print(imageURL)
     json_data = {"uri": imageURL}
